@@ -107,3 +107,29 @@ body {
 .hero_img {
     width: 100%;
 }
+
+@media (max-width: 800px) {
+    .nav_list {
+        display: none;
+    }
+
+    .nav_menu {
+        display: block;
+    }
+
+    .hero_main {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        text-align: center;
+    }
+
+    .hero_picture {
+        grid-row: 1/2;
+    }
+    
+    .hero_img {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+}
